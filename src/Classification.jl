@@ -5,7 +5,7 @@
 function onehot_encode(y, labels)
    onehot_arr = zeros(length(labels), length(y))
    for i in 1:length(y)
-       onehot_arr[Int(y[i]) + 1, i] = 1
+       onehot_arr[Int(y[i]), i] = 1
    end
    onehot_arr
 end
